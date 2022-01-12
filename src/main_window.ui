@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1800</width>
+    <height>960</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>54</y>
+      <width>1781</width>
+      <height>871</height>
+     </rect>
+    </property>
+    <widget class="QWebEngineView" name="mapHtml" native="true">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>9</y>
+       <width>961</width>
+       <height>841</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_province">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>20</y>
+       <width>155</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="selectionButton_ok">
+     <property name="geometry">
+      <rect>
+       <x>1600</x>
+       <y>20</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>确定</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="selectionButton_next">
+     <property name="geometry">
+      <rect>
+       <x>1690</x>
+       <y>20</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>下一时刻</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_city">
+     <property name="geometry">
+      <rect>
+       <x>1155</x>
+       <y>20</y>
+       <width>155</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_district">
+     <property name="geometry">
+      <rect>
+       <x>1320</x>
+       <y>20</y>
+       <width>155</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_id">
+     <property name="geometry">
+      <rect>
+       <x>1485</x>
+       <y>20</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWebEngineView" name="heatHtml" native="true">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>460</y>
+       <width>781</width>
+       <height>391</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="showtime_Label">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>60</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>当前时间：2020年1月1日0时</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="prelength_Label">
+     <property name="geometry">
+      <rect>
+       <x>1175</x>
+       <y>60</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>预报长度：6h</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="figure_label">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>90</y>
+       <width>781</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>9</y>
+      <width>600</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>600</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>600</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="1" column="0">
+      <widget class="QLabel" name="headinglabel">
+       <property name="minimumSize">
+        <size>
+         <width>600</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Heading</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>35</y>
+      <width>1500</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1500</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1800</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+   </widget>
+   <widget class="QMenu" name="menuConfig">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="actionsetting"/>
+    <addaction name="separator"/>
+    <addaction name="actionabout"/>
+   </widget>
+   <widget class="QMenu" name="menuCalcul">
+    <property name="title">
+     <string>运算</string>
+    </property>
+    <addaction name="actionerror"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuCalcul"/>
+   <addaction name="menuConfig"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionopen">
+   <property name="text">
+    <string>导入</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionerror">
+   <property name="text">
+    <string>误差计算</string>
+   </property>
+  </action>
+  <action name="actionsetting">
+   <property name="text">
+    <string>参数设置</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header>PyQt5.QtWebEngineWidgets</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

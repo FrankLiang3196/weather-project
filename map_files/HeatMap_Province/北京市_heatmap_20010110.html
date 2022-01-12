@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_343387896dfb43d197ec06029f16b203 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@master/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_343387896dfb43d197ec06029f16b203" ></div>
+        
+</body>
+<script>    
+    
+            var map_343387896dfb43d197ec06029f16b203 = L.map(
+                "map_343387896dfb43d197ec06029f16b203",
+                {
+                    center: [40.2, 116.4],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ff79735089544b2ebc8de03192466aa0 = L.tileLayer(
+                "http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn\u0026size=1\u0026scale=1\u0026style=7\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "\u9ad8\u5fb7\u5730\u56fe", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_343387896dfb43d197ec06029f16b203);
+        
+    
+            var heat_map_a73f145ee662494d989824ee6107263d = L.heatLayer(
+                [[40.13, 116.62, 32.85714285714286], [39.98, 116.28, 50.0], [40.45, 115.97, 55.0], [40.6, 116.13, 55.0], [40.73, 116.63, 35.714285714285715], [40.38, 116.87, 35.714285714285715], [40.37, 116.63, 35.714285714285715], [40.65, 117.12, 35.714285714285715], [40.17, 117.12, 32.85714285714286], [39.85, 116.75, 37.142857142857146], [39.95, 116.5, 31.42857142857143], [40.22, 116.22, 63.75], [39.97, 115.68, 52.5], [39.88, 116.15, 52.5], [39.8, 116.47, 37.142857142857146], [39.94, 116.21, 52.5], [39.87, 116.25, 52.5], [39.72, 116.35, 32.85714285714286], [39.77, 116.19, 52.5], [39.73, 115.74, 52.5]],
+                {"blur": 15, "gradient": {"0.16": "green", "0.32": "yellow", "0.48": "orange", "0.49": "red", "0.8": "purple", "1": "maroon"}, "maxZoom": 18, "minOpacity": 0.5, "radius": 28}
+            ).addTo(map_343387896dfb43d197ec06029f16b203);
+        
+</script>
